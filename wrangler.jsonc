@@ -1,14 +1,5 @@
 {
   "name": "myportfolio",
-  "main": "src/worker.js",
-  "workers_dev": false,
-  "preview_urls": false,
   "compatibility_date": "2025-11-02",
-  "routes": [
-    {
-      "pattern": "dharminpatel.com",
-      "zone_name": "dharminpatel.com",
-      "custom_domain": true
-    }
-  ]
+  "compatibility_flags": ["nodejs_compat"]
 }
