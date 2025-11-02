@@ -4,7 +4,7 @@
 	"private": true,
   "scripts": {
     "build": "next build",
-		"deploy": "wrangler pages deploy out --project-name=myportfolio",
+		"deploy": "npx wrangler pages deploy",
 		"dev": "next dev",
 		"start": "next start"
 	},
