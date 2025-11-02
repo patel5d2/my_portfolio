@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   generator: "v0.app",
 }
 
+import { ThemeProvider } from "@/components/theme-provider"
+import ThemeSwitcher from "@/components/ThemeSwitcher"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +32,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${jetBrainsMono.variable} ${courierPrime.variable} antialiased`}>
-      <body className="crt-effect terminal-bg">{children}</body>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="crt-effect terminal-bg">
+            <ThemeSwitcher />
+            {children}
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
