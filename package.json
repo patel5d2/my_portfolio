@@ -2,7 +2,9 @@
 	"name": "code",
 	"version": "0.0.0",
 	"private": true,
-	"scripts": {
+  "scripts": {
+    "preinstall": "npm config set legacy-peer-deps true",
+    "build": "next build",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev"
