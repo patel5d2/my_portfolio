@@ -4,7 +4,7 @@
 	"private": true,
   "scripts": {
     "preinstall": "npm config set legacy-peer-deps true",
-    "build": "next build",
+    "build": "npx next build",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev"
