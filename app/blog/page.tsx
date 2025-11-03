@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
+export const runtime = 'edge';
+
 export default function BlogPage() {
   const posts = [
     {

@@ -1,12 +1,16 @@
 "use client"
 
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
+import { Progress } from "@/components/ui/progress"
 import { Textarea } from "@/components/ui/textarea"
 import { useEffect, useState } from "react"
 import Typewriter from "@/components/Typewriter"
 import BackToTop from "@/components/BackToTop"
+
+export const runtime = 'edge';
 
 export default function HomePage() {
   const [mounted, setMounted] = useState(false)

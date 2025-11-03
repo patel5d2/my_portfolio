@@ -1,7 +1,11 @@
+
 import type React from "react"
 import type { Metadata } from "next"
 import { JetBrains_Mono, Courier_Prime } from "next/font/google"
 import "./globals.css"
+
+export const runtime = 'edge';
+
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
